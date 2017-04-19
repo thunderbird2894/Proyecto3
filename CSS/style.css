@@ -1,0 +1,51 @@
+/* Estilar a través de elemento */
+
+h3 {
+	color: #FF5522; /* o F52 */ /*todos los colores al mango
+	(F) crea blanco, todos los colores apagados (0) crea negro.
+	(son colores luz) */
+ 	color: rgb(0,120,255); /* del 0 al 255 */
+	color: rgba(95, 5, 87, 0.5); /* a define la trasnparencia
+	siendo 0 el mas apagado y 1 totalmente visible */
+	font-family: Arial, Helvetica, sans-serif; /* ordenado
+por orden de aplicacion (si no encuentra una usa la otra) */ 
+	font-family: 'Amatic SC', cursive;
+}
+
+/* Estilar a traves de clases */
+
+.titulo{
+	color: pink;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 50px;
+}
+
+/* Estilar a través de ID */
+
+#elemento1{
+	color: cyan;
+}
+
+h2{
+	color: red !important;
+}
+
+h2.titulo2{
+	color: green;
+	background-color: yellow;
+}
+
+
+/*dejando espacio se define (quien es padre e hijo etc)
+en el siguiente ejemplo se dice que edite todos los h2 con
+una clase de titulo 2 que esten contenidos en una section */
+
+section h2.titulo2{
+
+}
+
+/* coma es como un "y" */
+
+.titulo, .titulo2{
+	color: blue;
+}
